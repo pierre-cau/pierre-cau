@@ -2,13 +2,13 @@ name: Deploy
 
 on:
   schedule:
-    - cron: '5 */2 * * *'
+    - cron: '* */2 * * *'
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
