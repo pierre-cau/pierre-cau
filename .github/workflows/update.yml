@@ -27,8 +27,8 @@ jobs:
         poetry install
     - name: Update
       run: poetry run python build.py
-      # commit to master, update the info
-    - uses: EndBug/add-and-commit@v7
+      # auto commit to main
+    - uses: pierre-cau/git-auto-commit-action@v4
       with:
         commit_message: Update Info
 
