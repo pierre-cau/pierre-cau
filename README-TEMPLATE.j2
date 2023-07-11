@@ -1,0 +1,70 @@
+<img align="right" width="100" height="auto"
+src="assets/logo-ecl-carre-rouge.png">
+
+# Ahoy ! :raising_hand:
+
+Welcome to my page !
+
+## About me
+
+<!-- we add a quote to the page -->
+{% if quote is defined %}
+> {{ quote }}
+{% endif %}
+
+<!-- we add a picture to the page -->
+{% if picture is defined %}
+<img align="right" width="200" height="auto"
+src="{{ picture }}">
+{% endif %}
+
+I'm Pierre Cau, a french engineering student at [**"Ecole Centrale de Lyon" :lion:**](https://www.ec-lyon.fr/en).
+
+
+Roughly speaking, one could say that I'm a computer science student :computer:.
+Nonetheless, I'm also interested in many other fields such as physics :atom:, mathematics :triangular_ruler:, electronics :electric_plug:, mechanics :wrench: and so on.
+Indeed, since my school is a generalist one, I'm studying all these fields at the same time !
+
+As you may have guessed, I'm keen on learning new things, and I'm always looking for new challenges to take up :chart_with_upwards_trend:, especially when it comes to programming :muscle:.
+Moreover, I'm a big fan of open-source software and I'm trying to contribute to some projects when I have some spare time :white_check_mark:.
+
+I hope you'll enjoy your visit on my page ! And if you want to contact me, feel free to do so :wink:.
+
+#### Some of my favorite tools :star:
+
+{% for badge in badges %}{{ badge }}{% endfor %}
+
+
+{% if USER.blog %}
+## My latest blog posts :
+
+{% for post in last_posts %}
+* [{{post.title}}]({{post.link}})
+{% endfor %}
+{% endif %}
+
+{% if links is defined %}
+{% if links | length > 0 %}
+## My links :
+
+{% for link in links %}
+> [{{link.title}}]({{link.link}})
+{% endfor %}
+{% endif %}
+{% endif %}
+## Where to find me :iphone:
+
+[{{ linkedin.badge }}]({{ linkedin.url }}) [{{ twitter.badge }}]({{ twitter.url }}) [{{facebook.badge}}]({{facebook.url}})
+
+___________________________________________________________
+
+
+#### Weather 
+{{ weather }}
+
+{%if date is defined %}
+
+###### Last update : {{ date }}
+{% endif %}
+
+
