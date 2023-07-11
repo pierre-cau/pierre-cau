@@ -21,6 +21,7 @@ def get_feed(feed_url):
 
 
 if __name__ == "__main__":
+    # get github context
     weather = get_weather("Lyon")
     date = t.strftime("%d/%m/%Y")
     context = {
