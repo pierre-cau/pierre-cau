@@ -29,10 +29,5 @@ jobs:
       run: poetry run python build.py
       # auto commit to main
     - name: Git Auto Commit
-      run: |
-        git config --global user.name "pierre-cau"
-        git config --global user.email "pcaupro@gmail.com"
-        git add .
-        git commit -m "Auto Update"
-        git push
+      uses : stefanzweifel/git-auto-commit-action@v4
 
