@@ -2,7 +2,8 @@ name: Deploy
 
 on:
   schedule:
-    - cron: '* */2 * * *'
+    # on every hour starting at 8am to 19pm
+    - cron: '0 8-19 * * *'
   push:
     branches:
       - main
@@ -31,7 +32,9 @@ jobs:
     - name: Git Auto Commit
       uses : stefanzweifel/git-auto-commit-action@v4
       with :
-        commit_message : 'Update {{DATE}}'
+        # we write the date as commit message
+        commit_message :   "🤖 Auto Update ${{ steps.date.outputs.date }}"
+         
 
         
 
