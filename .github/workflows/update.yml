@@ -33,7 +33,7 @@ jobs:
       uses : stefanzweifel/git-auto-commit-action@v4
       with :
         # we write the date as commit message
-        commit_message :   "🤖 Auto Update ${{ steps.date.outputs.date }}"
+        commit_message :   "🤖 Auto Update"
          
 
         
