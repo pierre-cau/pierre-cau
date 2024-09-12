@@ -1,5 +1,5 @@
 <img align="right" width="100" height="auto"
-src="assets/logo-ecl-carre-rouge.png">
+src="https://assets.ec-lyon.fr/logo/svg/logo-centrale--rouge.svg">
 
 # Ahoy ! :raising_hand:
 
