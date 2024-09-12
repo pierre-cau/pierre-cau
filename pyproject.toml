@@ -10,7 +10,7 @@ python = "^3.10"
 profile-readme = "^0.1.2"
 feedparser = "^6.0.10"
 pandas = "^1.4.4"
-numpy = "^1.23.5"
+numpy = "^1.24.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
